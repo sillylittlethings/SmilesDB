@@ -991,7 +991,6 @@ CCCCCC[NH+](C)CC(=O)C(CC(O)=O)NC(=O)C(CC)n1cc(nc(NCc2nonc2C)c1=O)C(C)(C)C
 COC(=O)[C@@H]1CCCN1C(=O)[C@@H](Cc1ccccc1)N(C)C(=O)[C@H](C)NC(=O)[C@@H](NC(=O)C[C@H](O)[C@H](CC(C)C)NC(=O)[C@H](CC(N)=O)NC(=O)[C@H](CC(C)C)NC(=O)[C@H](OC(=O)[C@@H](OC(=O)[C@H](C(C)C)N(C)C)C(C)C)C(C)C)[C@@H](C)O
 OC(=O)C[C@H](NC(=O)c1ccc(CNS(=O)(=O)c2ccc(O)c(c2)C(O)=O)nc1)C=O
 COc1cc(ccc1-c1ccnc2[nH]c(nc12)-c1ccc(CN2CCOCC2)cc1)C(=O)N1CCCC1
-10.7270/Q2610XM2
 C(Cc1ccccc1)N1CCN(CC1)c1cc(nc(n1)N1CCCC1)N1CCCC1
 C(Cc1ccccc1)N1CCN(CC1)c1cc(nc(n1)N1CCCC1)N1CCCC1
 OC(=O)C[C@H](NC(=O)c1ccc(CNS(=O)(=O)c2ccc(O)c(c2)C(O)=O)nc1)C(=O)CSCc1ccccc1Cl
