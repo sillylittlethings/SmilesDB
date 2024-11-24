@@ -20,7 +20,6 @@ body {
 	position: absolute;
 	scale: 4;
 	overflow: hidden;
-	/* transform-origin: 0; */
 	text-decoration-line: underline;
 	text-decoration-style: wavy;
 	text-decoration-color: white;
@@ -28,6 +27,7 @@ body {
 	left: 50%;
 	font-size: 1px;
 	line-height: 100px;
+	text-wrap: nowrap;
 	color: transparent;
 }
 .content::before {
