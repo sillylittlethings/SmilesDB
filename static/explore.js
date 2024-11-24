@@ -14,6 +14,23 @@ function sheet_init() {
 
 var mols = {}
 var displayMols = {}
+
+function lazyload() {
+    for (let mol of displayMols.splice(0, 30)) {
+        document.getElementById("sheet").innerHTML += `<tr class="datrow">
+            <td>${mol["SMILES"]}</td>
+            <td>${mol["formula"]}</td>
+            <td>${mol["num_atoms"]}</td>
+            <td>${mol["num_bonds"]}</td>
+            <td>${Math.round(mol["LogP"]*1000)/1000}</td>
+            <td>${Math.round(mol["TPSA"]*1000)/1000}</td>
+            <td>${mol["rotatable_bonds"]}</td>
+            <td>${mol["hbond_donors"]}</td>
+            <td>${mol["hbond_acceptors"]}</td>
+        </tr>`
+    }
+}
+
 fetch("/api/full").then(
     x => x.text()
 ).then(
@@ -23,21 +40,10 @@ fetch("/api/full").then(
         displayMols = [...mols]
         document.getElementById("querytype").innerHTML = Object.keys(mols[0]).map(y => 
             `<option value="${y}">${y}</option>`)
+        lazyload()
         setInterval(() => {
             if ((window.innerHeight + Math.round(window.scrollY)) >= document.body.offsetHeight) {
-                for (let mol of displayMols.splice(0, 30)) {
-                    document.getElementById("sheet").innerHTML += `<tr class="datrow">
-                        <td>${mol["SMILES"]}</td>
-                        <td>${mol["formula"]}</td>
-                        <td>${mol["num_atoms"]}</td>
-                        <td>${mol["num_bonds"]}</td>
-                        <td>${Math.round(mol["LogP"]*1000)/1000}</td>
-                        <td>${Math.round(mol["TPSA"]*1000)/1000}</td>
-                        <td>${mol["rotatable_bonds"]}</td>
-                        <td>${mol["hbond_donors"]}</td>
-                        <td>${mol["hbond_acceptors"]}</td>
-                    </tr>`
-                }
+                lazyload()
             }
         }, 100)
     }
