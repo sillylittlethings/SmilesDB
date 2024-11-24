@@ -59,3 +59,7 @@ def api(endpoint, num):
             return jsonify(molList[-num:])
         case _:
             return "INVALID ENPOINT", 404
+        
+@app.errorhandler(404) 
+def not_found(e): 
+    return render_template("404.html") 
