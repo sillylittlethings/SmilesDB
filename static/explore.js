@@ -10,6 +10,7 @@ function sheet_init() {
                 <th>H-bond Donor Count</th>
                 <th>H-bond Acceptor Count</th>
             </tr>`
+    lazyload()
 }
 
 var mols = {}
@@ -35,12 +36,11 @@ fetch("/api/full").then(
     x => x.text()
 ).then(
     x => {
-        sheet_init()
         mols = JSON.parse(x)
         displayMols = [...mols]
         document.getElementById("querytype").innerHTML = Object.keys(mols[0]).map(y => 
             `<option value="${y}">${y}</option>`)
-        lazyload()
+        sheet_init()
         setInterval(() => {
             if ((window.innerHeight + Math.round(window.scrollY)) >= document.body.offsetHeight) {
                 lazyload()
