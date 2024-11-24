@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>{% block title %}{% endblock %} | SmilesDB</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="A SMILES-first molecular database API" />
+
+    <!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://smilesdb.org/" />
+	<meta property="og:title" content="SmilesDB" />
+	<meta property="og:description" content="A SMILES-first molecular database API" />
+	<meta property="og:image" content="/static/embed.png" />
+	
+	<!-- Twitter -->
+	<meta property="twitter:card" content="summary_large_image" />
+	<meta property="twitter:url" content="https://smilesdb.org/" />
+	<meta property="twitter:title" content="SmilesDB" />
+	<meta property="twitter:description" content="A SMILES-first molecular database API" />
+	<meta property="twitter:image" content="/static/embed.png" />
+    
+    <link rel="stylesheet" type="text/css" href="/static/style.css" />
+    {% block stylesheets %}{% endblock %}
+    <link rel="icon" href="/static/icon.svg">
+</head>
+<body>
+    {% block content %}{% endblock %}
+</body>
+</html>

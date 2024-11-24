@@ -1,31 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8" />
-	<title>Citations | SmilesDB</title>
-	<meta name="viewport" content="width=device-width,initial-scale=1" />
-	<meta name="description" content="A SMILES-first molecular database API" />
-	<link rel="stylesheet" type="text/css" href="/static/style.css" />
-	<link rel="stylesheet" type="text/css" href="/static/ref.css" />
-	<link rel="icon" href="/static/icon.svg">
-</head>
-<body>
-    <div class="reference" id="ref">
-        <h1>Citations</h1>
-        <p class="nav">
-            <a href="/">Home</a> • <a href="/docs">Docs</a> • <a href="/explore">Explore</a> • <a href="https://github.com/rockwillck/smilesdb">Github</a>        
-        </p>
-        <h2>Molecular Transformer: A Model for Uncertainty-Calibrated Chemical Reaction Prediction</h2>
-        <p>Philippe Schwaller, Teodoro Laino, ThÃ©ophile Gaudin, Peter Bolgar, Christopher A. Hunter, Costas Bekas, and Alpha A. Lee<br />
-        <em>ACS Central Science</em> <strong>2019</strong> <em>5</em> (9), 1572-1583<br />
-        DOI: 10.1021/acscentsci.9b00576</p>
-        <h2>BindingDB</h2>
-        <p>BindingDB in 2015: A public database for medicinal chemistry, computational chemistry and systems pharmacology. M.K. Gilson, T. Liu, M. Baitaluk, G. Nicola, L. Hwang and J. Chong Nucleic Acids Research 44:D0145-D1053, doi: 10.1093/nar/gkv1072</p>
-        <h2>ChEMBL Database</h2>
-        <p>Zdrazil B, Felix E, Hunter F, Manners EJ, Blackshaw J, Corbett S, de Veij M, Ioannidis H, Lopez DM, Mosquera JF, Magarinos MP, Bosc N, Arcila R, KizilÃ¶ren T, Gaulton A, Bento AP, Adasme MF, Monecke P, Landrum GA, Leach AR. The ChEMBL Database in 2023: a drug discovery platform spanning multiple bioactivity data types and time periods. Nucleic Acids Res. 2024 Jan 5;52(D1):D1180-D1192. </p>
-        <p>doi: 10.1093/nar/gkad1004. PMID: 37933841; PMCID: PMC10767899.</p>
-        <h2>RDKit</h2>
-        <p>RDKit: Open-source cheminformatics. https://www.rdkit.org</p>
-    </div>
-</body>
-</html>
+{% extends "base.html" %}
+{% block title %}Citations{% endblock %}
+{% block stylesheets %}
+<link rel="stylesheet" type="text/css" href="/static/ref.css" />
+{% endblock %}
+{% block content %}
+<div class="reference" id="ref">
+    <h1>Citations</h1>
+    <p class="nav">
+        <a href="/">Home</a> • <a href="/docs">Docs</a> • <a href="/explore">Explore</a> • <a href="https://github.com/rockwillck/smilesdb">Github</a>        
+    </p>
+    <h2>Molecular Transformer: A Model for Uncertainty-Calibrated Chemical Reaction Prediction</h2>
+    <p>Philippe Schwaller, Teodoro Laino, ThÃ©ophile Gaudin, Peter Bolgar, Christopher A. Hunter, Costas Bekas, and Alpha A. Lee<br />
+    <em>ACS Central Science</em> <strong>2019</strong> <em>5</em> (9), 1572-1583<br />
+    DOI: 10.1021/acscentsci.9b00576</p>
+    <h2>BindingDB</h2>
+    <p>BindingDB in 2015: A public database for medicinal chemistry, computational chemistry and systems pharmacology. M.K. Gilson, T. Liu, M. Baitaluk, G. Nicola, L. Hwang and J. Chong Nucleic Acids Research 44:D0145-D1053, doi: 10.1093/nar/gkv1072</p>
+    <h2>ChEMBL Database</h2>
+    <p>Zdrazil B, Felix E, Hunter F, Manners EJ, Blackshaw J, Corbett S, de Veij M, Ioannidis H, Lopez DM, Mosquera JF, Magarinos MP, Bosc N, Arcila R, KizilÃ¶ren T, Gaulton A, Bento AP, Adasme MF, Monecke P, Landrum GA, Leach AR. The ChEMBL Database in 2023: a drug discovery platform spanning multiple bioactivity data types and time periods. Nucleic Acids Res. 2024 Jan 5;52(D1):D1180-D1192. </p>
+    <p>doi: 10.1093/nar/gkad1004. PMID: 37933841; PMCID: PMC10767899.</p>
+    <h2>RDKit</h2>
+    <p>RDKit: Open-source cheminformatics. https://www.rdkit.org</p>
+</div>
+{% endblock %}

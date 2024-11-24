@@ -1,31 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8" />
-	<title>Explore | SmilesDB</title>
-	<meta name="viewport" content="width=device-width,initial-scale=1" />
-	<meta name="description" content="A SMILES-first molecular database API" />
-	<link rel="stylesheet" type="text/css" href="/static/style.css" />
-	<link rel="stylesheet" type="text/css" href="/static/ref.css" />
-	<link rel="stylesheet" type="text/css" href="/static/explore.css" />
-	<link rel="icon" href="/static/icon.svg">
-</head>
-<body>
-    <div class="reference">
-        <h1>Explore</h1>
-        <p class="nav">
-            <a href="/">Home</a> • <a href="/docs">Docs</a> • <a href="https://github.com/rockwillck/smilesdb">Github</a>        
-        </p>
-        <h2>Database Interface</h2>
-        <input placeholder="Search" id="query">
-        <select id="querytype">
-          </select>
-        <button onclick="search()">Search</button>
-        <button onclick="clearSearch()" hidden id="cle">Clear</button>
-        <table class="datsheet" id="sheet">
-            
-        </table>
-    </div>
-    <script src="/static/explore.js"></script>
-</body>
-</html>
+{% extends "base.html" %}
+{% block title %}Explore{% endblock %}
+{% block stylesheets %}
+<link rel="stylesheet" type="text/css" href="/static/ref.css" />
+<link rel="stylesheet" type="text/css" href="/static/explore.css" />
+{% endblock %}
+{% block content %}
+<div class="reference">
+    <h1>Explore</h1>
+    <p class="nav">
+        <a href="/">Home</a> • <a href="/docs">Docs</a> • <a href="https://github.com/rockwillck/smilesdb">Github</a>        
+    </p>
+    <h2>Database Interface</h2>
+    <input placeholder="Search" id="query">
+    <select id="querytype">
+      </select>
+    <button onclick="search()">Search</button>
+    <button onclick="clearSearch()" hidden id="cle">Clear</button>
+    <table class="datsheet" id="sheet">
+        
+    </table>
+</div>
+<script src="/static/explore.js"></script>
+{% endblock %}
