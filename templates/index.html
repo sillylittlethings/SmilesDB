@@ -2,17 +2,40 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8" />
-	<title>Hello, world!</title>
+	<title>SmilesDB</title>
 	<meta name="viewport" content="width=device-width,initial-scale=1" />
-	<meta name="description" content="" />
+	<meta name="description" content="A SMILES-first molecular database API" />
 	<link rel="stylesheet" type="text/css" href="/static/style.css" />
+	<link rel="stylesheet" type="text/css" href="/static/home.css" />
 	<link rel="icon" href="">
 </head>
 <body>
-	<h1>Hello, world!</h1>
-	<footer>
-	<small>© <script>document.write(new Date().getFullYear())</script> Your company name. All Rights Reserved.</small>
-	</footer>
-	<script src="app.js"></script>
+	<div class="all">
+		<div class="hero">
+			<h1>SmilesDB</h1>
+			<p>A SMILES-first molecular database API</p>
+			<p class="nav">
+				<a href="/docs">Docs</a> • <a href="/explore">Explore</a> • <a href="https://github.com/rockwillck/smilesdb">Github</a>
+			</p>
+		</div>
+		<div class="content">
+			<div class="section">
+				<h2>A database defined by SMILES strings</h2>
+				<p>SmilesDB is a SMILES-first database. All molecules are stored as SMILES strings, and data is then extracted from that SMILES string.</p>
+			</div>
+			<div class="section">
+				<h2>An accessible, free, open-source API</h2>
+				<p>Available on <a href="https://github.com/rockwillck/smilesdb">Github</a> and with a free <a href="api">API endpoint</a>. Comprehensively <a href="/docs">documentated</a> and platform agnostic.</p>
+			</div>
+			<div class="section">
+				<h2>Over 5,000 molecules, collected and processed.</h2>
+				<p>Accelerating access to thousands of molecules for research and testing. Collected from <a href="https://www.bindingdb.org/rwd/bind/index.jsp">BindingDB</a> and <a href="https://www.ebi.ac.uk/chembl/">ChemBL</a>, processed with <a href="https://www.rdkit.org/">RDKit</a>.</p>
+			</div>
+			<footer>
+				Created by <a href="https://rockwill.dev">William Choi-Kim</a>.<br>
+				Powered by <a href="/citations">open source</a>.
+			</footer>
+		</div>
+	</div>
 </body>
 </html>

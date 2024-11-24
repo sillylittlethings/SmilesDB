@@ -1,0 +1,64 @@
+body {
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-image: radial-gradient(18% 28% at 24% 50%, #CEFAFF1F 7%, #073AFF00 100%),radial-gradient(18% 28% at 18% 71%, #FFFFFF0A 6%, #073AFF00 100%),radial-gradient(70% 53% at 36% 76%, #1d434743 0%, #073AFF00 100%),radial-gradient(42% 53% at 34% 72%, #FFFFFF2B 7%, #073AFF00 100%),radial-gradient(18% 28% at 35% 87%, #FFFFFF36 7%, #073AFF00 100%),radial-gradient(31% 43% at 7% 98%, #FFFFFF2E 24%, #073AFF00 100%),radial-gradient(21% 37% at 72% 23%, #46542419 24%, #073AFF00 100%),radial-gradient(35% 56% at 91% 74%, #8d71c65a 9%, #073AFF00 100%),radial-gradient(74% 86% at 67% 38%, hsla(147, 73%, 48%, 0.388) 24%, #073AFF00 100%),linear-gradient(125deg, #4EB5FF00 1%, #4C00FC00 100%);
+}
+.all {
+	backdrop-filter: blur(10vmin);
+}
+
+.hero {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.content::before, .section::after {
+	content: "------------------------------------------------------------------------------------------------------------------------------------------------------------------";
+	position: absolute;
+	scale: 4;
+	overflow: hidden;
+	/* transform-origin: 0; */
+	text-decoration-line: underline;
+	text-decoration-style: wavy;
+	text-decoration-color: white;
+	rotate: 90deg;
+	left: 50%;
+	font-size: 1px;
+	line-height: 100px;
+	color: transparent;
+}
+.content::before {
+	top: -55vh;
+	width: 12.5vh;
+	translate: -50% 27.5vh;
+}
+.section::after {
+	width: 6vh;
+	translate: -50% 12vh;
+}
+.content {
+	position: relative;
+	margin-top: 25vh;
+	text-align: center;
+	padding-bottom: 100px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-size: 20px;
+	background-image: linear-gradient(transparent, rgba(47, 138, 111, 0.425));
+}
+.section {
+	position: relative;
+	margin-bottom: 30vh;
+	max-width: 500px;
+	padding: 30px;
+	box-sizing: border-box;
+}
+.section > h2 {
+	margin:0;
+	padding:0;
+}

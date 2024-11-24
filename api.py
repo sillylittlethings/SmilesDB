@@ -1,6 +1,7 @@
-from flask import Flask, render_template, jsonify
+from flask import Flask, render_template, jsonify, url_for, redirect
 import random
 import json
+import markdown
 
 app = Flask(__name__)
 
@@ -8,13 +9,24 @@ with open("data/smilesData.txt", "r") as f:
     molList = list(map(json.loads, f.readlines()))
     smilesList = list(map(lambda x : x["SMILES"], molList))
 
+with open("CITATIONS.md", "r") as cit:
+    citations_html = markdown.markdown(cit.read())
+
 @app.route("/")
 def home():
     return render_template("index.html")
-
-@app.route("/api")
+@app.route("/docs")
 def docs():
     return render_template("docs.html")
+@app.route("/api")
+def api_docs():
+    return render_template("docs.html")
+@app.route("/citations")
+def citations():
+    return render_template("citations.html")
+@app.route("/explore")
+def exp():
+    return render_template("explore.html")
 
 @app.route("/api/smiles/full")
 def smiles_full():
