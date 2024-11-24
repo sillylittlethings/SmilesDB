@@ -1,0 +1,14 @@
+table {
+    max-width: 100%;
+    display: block;
+    flex-direction: column;
+    overflow: scroll;
+}
+tr {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+th, td {
+    padding: 10px;
+    max-width: 20vw;
+    word-wrap: break-word;
+}

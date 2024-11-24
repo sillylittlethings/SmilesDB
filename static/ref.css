@@ -10,7 +10,7 @@ body {
 h1 {
 }
 
-code {
+code, input, select, button {
     background-color: rgba(0, 0, 0, 0.2);
     padding: 3px;
     border-radius: 3px;
@@ -22,4 +22,22 @@ td {
     margin-right: 10px;
     padding-right: 20px;
     box-sizing: border-box;
+}
+
+input, select, button {
+    color: white;
+    border-color: transparent;
+    padding: 10px;
+    font-family: inherit;
+}
+
+button {
+    transition: 0.2s;
+    border-radius: 100vmin;
+}
+button:hover {
+    border-color: white;
+}
+button:active {
+    opacity: 0.5;
 }
