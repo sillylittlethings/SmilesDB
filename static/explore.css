@@ -7,8 +7,36 @@ table {
 tr {
     background-color: rgba(0, 0, 0, 0.2);
 }
-th, td {
+th > button, td {
     padding: 10px;
     max-width: 20vw;
     word-wrap: break-word;
+}
+
+th {
+}
+th > button {
+    position: relative;
+    background-color: transparent;
+    font-family: inherit;
+    font-size: inherit;
+    border-radius: 0;
+    width: 100%;
+    min-width: 100px;
+    height: 100px;
+}
+.desc::after {
+    content: "▼";
+    position: absolute;
+    right: 5px;
+    top: 0;
+    transition: 0.2s;
+}
+.asc::after {
+    content: "▼";
+    position: absolute;
+    right: 5px;
+    top: 0;
+    rotate: 180deg;
+    transition: 0.2s;
 }
