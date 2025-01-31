@@ -52,7 +52,7 @@ function lazyload() {
     for (let mol of displayMols.splice(0, 30)) {
         let dr = document.createElement("tr")
         dr.className = "datrow"
-        dr.innerHTML = `<td>${mol["SMILES"]}</td>
+        dr.innerHTML = `<td><div>${mol["SMILES"]}</div></td>
             <td>${mol["formula"]}</td>
             <td>${mol["num_atoms"]}</td>
             <td>${mol["num_bonds"]}</td>
