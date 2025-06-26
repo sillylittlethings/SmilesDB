@@ -2,7 +2,7 @@ table {
     max-width: 100%;
     display: block;
     flex-direction: column;
-    overflow: scroll;
+    overflow-y: hidden;
 }
 tr {
     background-color: rgba(0, 0, 0, 0.2);
@@ -55,4 +55,5 @@ td > * {
     top: 0;
     padding: 10px;
     box-sizing: border-box;
+    overflow: hidden;
 }
