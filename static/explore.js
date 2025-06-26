@@ -32,6 +32,11 @@ function sheet_init() {
                         out = -1
                     }
                 } else {
+                    if (a[keys[i]] == undefined) {
+                        return 1
+                    } else if (b[keys[i]] == undefined) {
+                        return -1
+                    }
                     out = a[keys[i]] - b[keys[i]]
                 }
                 return out*Math.sign(orderBy[1])
