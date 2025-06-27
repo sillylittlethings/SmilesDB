@@ -9,7 +9,10 @@ tags:
 authors:
   - name: William C. Choi-Kim
     orcid: 0009-0000-3902-4745
+    affiliation: 1
 affiliations:
+  - index: 1
+    name: Independent Scholar
 date: 27 June 2025
 bibliography: paper.bib
 ---
