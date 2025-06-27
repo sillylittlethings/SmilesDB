@@ -35,6 +35,6 @@ Each molecule in `SmilesDB` includes data from RDKit [@rdkit] as well as a SMILE
 
 # Acknowledgements
 
-We acknowledge support from Jason Sonnenberg during the early stages of this project.
+Thank you to Jason Sonnenberg for his support during the early stages of this project.
 
 # References
