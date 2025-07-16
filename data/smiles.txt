@@ -6669,3 +6669,4 @@ COc1ccccc1-n1nc(OC2CC(C)(C)[S@+]([O-])C(C)(C)C2)cc1-c1ccc(Cl)cc1
 
 
 
+N[C@@H](C[SeH])C(=O)O
