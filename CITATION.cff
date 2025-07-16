@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: "Choi-Kim"
+  given-names: "William"
+  orcid: "https://orcid.org/0009-0000-3902-4745"
+title: "SmilesDB"
+version: 1.0.0
+doi: 10.5281/ZENODO.15756603
+date-released: 2025
+url: "https://github.com/rockwillck/SmilesDB"
