@@ -2,7 +2,7 @@
 A SMILES-first molecular database API
 
 ![screenshot](https://i.imgur.com/Zms4VHs.png)
-Available at [smilesdb.org](https://smilesdb.org/citations).
+Available at [smilesdb.org](https://smilesdb.org).
 
 ## Documentation
 SmilesDB contains only SMILES strings and no other data. It can be queried using `GET` endpoints.
