@@ -4,6 +4,8 @@ A SMILES-first molecular database API
 ![screenshot](https://i.imgur.com/Zms4VHs.png)
 Available at [smilesdb.org](https://smilesdb.org).
 
+To check availability and uptime, see the [status page](https://status.smilesdb.org/).
+
 ## Documentation
 
 ### [Endpoints](https://github.com/rockwillck/SmilesDB/wiki/API-Documentation#endpoints)
