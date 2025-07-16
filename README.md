@@ -9,10 +9,9 @@ To check availability and uptime, see the [status page](https://status.smilesdb.
 ## Documentation
 
 ### [Endpoints](https://github.com/rockwillck/SmilesDB/wiki/API-Documentation#endpoints)
-
-
 ### [Data Spec](https://github.com/rockwillck/SmilesDB/wiki/API-Documentation#data-spec)
-
+### Dependencies
+Dependencies can be installed using `pip install -r requirements.txt`.
 
 ## Examples
 ### [WolframLanguage (Mathematica)](https://github.com/rockwillck/SmilesDB/wiki/Examples#wolframlanguage-mathematica)
