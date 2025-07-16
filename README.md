@@ -34,7 +34,7 @@ Each JSON will have some (but not necessarily all) of the following:
 
 ## Examples
 ### WolframLanguage (Mathematica)
-This is a community post that we wrote about using SmilesDB in WolframLanguage.
+This is a [community post](https://community.wolfram.com/groups/-/m/t/3327619) that we wrote about using SmilesDB in WolframLanguage.
 
 ### JavaScript
 The Explore page calls the API. You can see its code on [Github](https://github.com/rockwillck/SmilesDB/blob/main/static/explore.js).
