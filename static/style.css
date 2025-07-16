@@ -31,3 +31,17 @@ a:hover {
 	margin: 0;
 	font-size: 25px;
 }
+
+/* WebKit (Chrome, Edge, Safari) */
+::-webkit-scrollbar {
+  width: 2px;
+  height: 3px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(26, 124, 93, 0.651);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: white;
+}
