@@ -10,25 +10,9 @@ To check availability and uptime, see the [status page](https://status.smilesdb.
 
 ### [Endpoints](https://github.com/rockwillck/SmilesDB/wiki/API-Documentation#endpoints)
 ### [Data Spec](https://github.com/rockwillck/SmilesDB/wiki/API-Documentation#data-spec)
-### Dependencies
+### [Dependencies](https://github.com/rockwillck/SmilesDB/wiki/Self%E2%80%90Hosting-&-Installation#dependencies)
 
-## Self-Hosting / Installation
-### Quickstart
-To self-host SmilesDB, clone the repo:  
-`git clone https://github.com/rockwillck/SmilesDB`  
-
-#### Dependencies
-Then, install dependencies:  
-`pip install -r requirements.txt`  
-
-#### Run Server
-And run the API server using:  
-`flask --app api run`
-
-### Scraping and Processing
-If you want to scrape and process data yourself, use the scripts under `processing/`; links from BindingDB are in `data/links.txt` but you can use your own scraper to populate `smiles.txt`.  
-
-Once `smiles.txt` has been filled, use the `updateSmiles.yml` Github Action or run `python processing/process.py && python processing/smilesRDkit.py`.
+## [Self-Hosting / Installation](https://github.com/rockwillck/SmilesDB/wiki/Self%E2%80%90Hosting-&-Installation)
 
 ## Examples
 ### [WolframLanguage (Mathematica)](https://github.com/rockwillck/SmilesDB/wiki/Examples#wolframlanguage-mathematica)
