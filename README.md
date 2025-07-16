@@ -1,8 +1,9 @@
-# SmilesDB
-A SMILES-first molecular database API
+# [SmilesDB](https://smilesdb.org)
+A SMILES-first molecular database API  
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15756604.svg)](https://doi.org/10.5281/zenodo.15756604)
 
 ![screenshot](https://i.imgur.com/Zms4VHs.png)
-Available at [smilesdb.org](https://smilesdb.org).
 
 To check availability and uptime, see the [status page](https://status.smilesdb.org/).
 
