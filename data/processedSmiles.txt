@@ -5477,3 +5477,5 @@ CN1CCC(CC1)C(N1CCN(CC1)C(=O)CC(c1ccccc1)c1ccccc1)c1ccc(Cl)cc1
 O=C(CCCCC(c1ccccc1)c1ccccc1)N1CCN(C\C=C\c2ccccc2)CC1
 COc1ccccc1N1CCN(CCCCn2ncc(=O)n(C)c2=O)CC1
 COc1ccccc1-n1nc(OC2CC(C)(C)[S@+]([O-])C(C)(C)C2)cc1-c1ccc(Cl)cc1
+N[C@@H](C[SeH])C(=O)O
+CC(C)C[C@H](NC(=O)[C@H](NC(=O)[C@H](NC(=O)[C@@H](NC(=O)[C@H](NC(=O)[C@@H](NC(=O)[C@H](NC(=O)[C@H](NC(=O)[C@@H](NC(=O)[C@@H](NC(=O)[C@@H](NC(=O)[C@H](NC(=O)[C@@H](N1CCCC1=O)C(C)C)C(C)C)CC(C)C)CC(C)C)C(C)C)CCCCN)C(C)C)CC(C)C)C(C)C)C(C)C)C(C)C)C(C)C
