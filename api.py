@@ -17,7 +17,7 @@ def home():
     return render_template("index.html")
 @app.route("/docs")
 def docs():
-    return render_template("docs.html")
+    return redirect("https://github.com/rockwillck/SmilesDB/wiki")
 @app.route("/api")
 def api_docs():
     return render_template("docs.html")
