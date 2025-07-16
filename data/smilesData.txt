@@ -132,6 +132,7 @@
 {"SMILES": "NC(=O)c1nnc2ccccc2c1N", "formula": "C9H8N4O", "weight": 188.19, "num_atoms": 14, "num_bonds": 15, "LogP": 0.31089999999999984, "TPSA": 94.89, "rotatable_bonds": 1, "hbond_donors": 2, "hbond_acceptors": 4}
 {"SMILES": "NC(=S)NN=Cc1ccc(O)cc1", "formula": "C8H9N3OS", "weight": 195.247, "num_atoms": 13, "num_bonds": 13, "LogP": 0.5593000000000001, "TPSA": 70.64, "rotatable_bonds": 2, "hbond_donors": 3, "hbond_acceptors": 3}
 {"SMILES": "Fc1c[nH]c(=O)[nH]c1=O", "formula": "C4H3FN2O2", "weight": 130.078, "num_atoms": 9, "num_bonds": 9, "LogP": -0.7977000000000001, "TPSA": 65.72, "rotatable_bonds": 0, "hbond_donors": 2, "hbond_acceptors": 2}
+{"SMILES": "N[C@@H](C[SeH])C(=O)O", "formula": "C3H7NO2Se", "weight": 168.054, "num_atoms": 7, "num_bonds": 6, "LogP": -1.2826000000000002, "TPSA": 63.32000000000001, "rotatable_bonds": 2, "hbond_donors": 2, "hbond_acceptors": 2}
 {"SMILES": "CCCCCCCCCCCCCCC(CO)NCC", "formula": "C18H39NO", "weight": 285.516, "num_atoms": 20, "num_bonds": 19, "LogP": 5.0480000000000045, "TPSA": 32.26, "rotatable_bonds": 16, "hbond_donors": 2, "hbond_acceptors": 2}
 {"SMILES": "NCCc1c[nH]c2ccc(O)cc12", "formula": "C10H12N2O", "weight": 176.21899999999997, "num_atoms": 13, "num_bonds": 14, "LogP": 1.3747, "TPSA": 62.040000000000006, "rotatable_bonds": 2, "hbond_donors": 3, "hbond_acceptors": 2}
 {"SMILES": "OC(=O)c1ccnc(c1)C(O)=O", "formula": "C7H5NO4", "weight": 167.11999999999998, "num_atoms": 12, "num_bonds": 12, "LogP": 0.478, "TPSA": 87.49000000000001, "rotatable_bonds": 2, "hbond_donors": 2, "hbond_acceptors": 3}
