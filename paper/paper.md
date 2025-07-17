@@ -36,7 +36,7 @@ However, SMILES remains one of the most efficient human-readable formats in whic
 
 ## Web API
 
-The core functionality of SmilesDB is as a web-app and online API with easily accessible endpoints. When self-hosted, these endpoints remain accessible but at a localhost address returned by the `Flask` start command.
+The core functionality of SmilesDB is as a web-app and online API with easily accessible endpoints. When self-hosted, these endpoints remain accessible but at a localhost address returned by the `Flask` [@flask] start command.
 
 | Endpoint              | Description                                      |
 |-----------------------|--------------------------------------------------|
@@ -97,7 +97,7 @@ Table 2: JSON object field types in return array from SmilesDB
 ## Integrating the API
 Because the `SmilesDB` API is open and can be requested from any programming language with a http request framework, integrating `SmilesDB` into existing projects is simple. 
 
-For example, in `WolframLanguage`, integration is as simple as:
+For example, in `WolframLanguage` [@wolframInterface], integration is as simple as:
 ```mathematica
 getRandom[n_Integer] := Molecule /@ ImportString[
     URLRead[
