@@ -36,7 +36,7 @@ However, SMILES remains one of the most efficient human-readable formats in whic
 
 ## Web API
 
-The core functionality of SmilesDB is as a web-app and online API with easily accessible endpoints.
+The core functionality of SmilesDB is as a web-app and online API with easily accessible endpoints. When self-hosted, these endpoints remain accessible but at a localhost address returned by the `Flask` start command.
 
 | Endpoint              | Description                                      |
 |-----------------------|--------------------------------------------------|
