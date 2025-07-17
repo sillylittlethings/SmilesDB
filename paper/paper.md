@@ -50,11 +50,32 @@ Table 1: available API endpoints for SmilesDB
 The return from the API endpoints will be a JSON array consisting of some number of JSON objects. The array will look something like:
 ```JSON
 [
-  {"LogP":1.99502,"SMILES":"Cc1ccccc1","TPSA":0.0,"formula":"C7H8","hbond_acceptors":0,"hbond_donors":0,"num_atoms":7,"num_bonds":7,"rotatable_bonds":0,"weight":92.14099999999999},
-  {"LogP":1.99502,"SMILES":"Cc1ccccc1","TPSA":0.0,"formula":"C7H8","hbond_acceptors":0,"hbond_donors":0,"num_atoms":7,"num_bonds":7,"rotatable_bonds":0,"weight":92.14099999999999}
+  {
+    "LogP":1.99502,
+    "SMILES":"Cc1ccccc1",
+    "TPSA":0.0,
+    "formula":"C7H8",
+    "hbond_acceptors":0,
+    "hbond_donors":0,
+    "num_atoms":7,
+    "num_bonds":7,
+    "rotatable_bonds":0,
+    "weight":92.14099999999999
+  },
+  {
+    "LogP":1.99502,
+    "SMILES":"Cc1ccccc1",
+    "TPSA":0.0,
+    "formula":"C7H8",
+    "hbond_acceptors":0,
+    "hbond_donors":0,
+    "num_atoms":7,
+    "num_bonds":7,
+    "rotatable_bonds":0,
+    "weight":92.14099999999999
+  }
 ]
-```
-{width="100%"}  
+``` 
 
 Some fields may not always exist in every JSON object, though an empty object will never be returned in the array.
 
@@ -84,7 +105,6 @@ getRandom[n_Integer] := Molecule /@ ImportString[
       ,"Body"]
   ,"JSON"] 
 ```
-{width="100%"}
 
 # Available Data
 Each molecule in `SmilesDB` includes data from RDKit [@rdkit] as well as a SMILES string identifier. The full database can be queried using the online API at [smilesdb.org/api](https://smilesdb.org/api) with a variety of dynamic endpoints for any number of molecules.
