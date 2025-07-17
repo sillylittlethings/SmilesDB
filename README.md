@@ -28,4 +28,6 @@ Choi-Kim, W. (2025). SmilesDB Dataset [Dataset]. Zenodo. https://doi.org/10.5281
 ## [Citations](https://github.com/rockwillck/SmilesDB/wiki/Citations)
 
 ## License
-The SmilesDB database is licensed under a Creative Commons Attribution-Share Alike 3.0 Unported License (https://creativecommons.org/licenses/by-sa/3.0/). This allows use, redistribution, and adaption of SmilesDB as long as appropriate attribution is given and any adaptations are redistributed under the same license.
+The code of SmilesDB (including the web-app in `api.py`, the processing code under `processing/`, and the interface in `static/` and `templates/`) are licensed under the MIT license.
+
+The data of the SmilesDB database (stored in `data/`) is licensed under a Creative Commons Attribution-Share Alike 3.0 Unported License (https://creativecommons.org/licenses/by-sa/3.0/). This allows use, redistribution, and adaption of SmilesDB as long as appropriate attribution is given and any adaptations are redistributed under the same license.
