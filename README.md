@@ -20,6 +20,8 @@ To check availability and uptime, see the [status page](https://status.smilesdb.
 
 ### [JavaScript](https://github.com/rockwillck/SmilesDB/wiki/Examples#javascript)
 
+## [Contributing](https://github.com/rockwillck/SmilesDB/wiki/Contributing)
+
 ## Cite SmilesDB
 Choi-Kim, W. (2025). SmilesDB Dataset [Dataset]. Zenodo. https://doi.org/10.5281/ZENODO.15756603
 
