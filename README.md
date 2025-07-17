@@ -1,8 +1,9 @@
-# SmilesDB
-A SMILES-first molecular database API
+# [SmilesDB](https://smilesdb.org)
+A SMILES-first molecular database API  
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15756604.svg)](https://doi.org/10.5281/zenodo.15756604)
 
 ![screenshot](https://i.imgur.com/Zms4VHs.png)
-Available at [smilesdb.org](https://smilesdb.org).
 
 To check availability and uptime, see the [status page](https://status.smilesdb.org/).
 
@@ -18,6 +19,8 @@ To check availability and uptime, see the [status page](https://status.smilesdb.
 ### [WolframLanguage (Mathematica)](https://github.com/rockwillck/SmilesDB/wiki/Examples#wolframlanguage-mathematica)
 
 ### [JavaScript](https://github.com/rockwillck/SmilesDB/wiki/Examples#javascript)
+
+## [Contributing](https://github.com/rockwillck/SmilesDB/wiki/Contributing)
 
 ## Cite SmilesDB
 Choi-Kim, W. (2025). SmilesDB Dataset [Dataset]. Zenodo. https://doi.org/10.5281/ZENODO.15756603
