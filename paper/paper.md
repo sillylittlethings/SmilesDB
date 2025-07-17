@@ -37,12 +37,13 @@ However, SMILES remains one of the most efficient human-readable formats in whic
 ## Web API
 
 The core functionality of SmilesDB is as a web-app and online API with easily accessible endpoints.
+
 | Endpoint              | Description                                      |
 |-----------------------|--------------------------------------------------|
 | `/api/smiles/full`    | Gets the full list of SMILES strings as a JSON list. |
 | `/api/smiles/random/n_` | Returns `n_` random SMILES strings.               |
 | `/api/smiles/short/n_`  | Returns `n_` shortest SMILES strings.             |
-| `/api/smiles/long/n_`   | Returns `n_` longest SMILES strings.              |
+| `/api/smiles/long/n_`   | Returns `n_` longest SMILES strings.              |{width="100%"}
 
 Table 1: available API endpoints for SmilesDB
 
@@ -52,7 +53,7 @@ The return from the API endpoints will be a JSON array consisting of some number
   {"LogP":1.99502,"SMILES":"Cc1ccccc1","TPSA":0.0,"formula":"C7H8","hbond_acceptors":0,"hbond_donors":0,"num_atoms":7,"num_bonds":7,"rotatable_bonds":0,"weight":92.14099999999999},
   {"LogP":1.99502,"SMILES":"Cc1ccccc1","TPSA":0.0,"formula":"C7H8","hbond_acceptors":0,"hbond_donors":0,"num_atoms":7,"num_bonds":7,"rotatable_bonds":0,"weight":92.14099999999999}
 ]
-```
+```{width="100%"}
 Some fields may not always exist in every JSON object, though an empty object will never be returned in the array.
 
 | Field              | Description                             |
@@ -66,7 +67,7 @@ Some fields may not always exist in every JSON object, though an empty object wi
 | `TPSA`             | Topological Polar Surface Area (TPSA)   |
 | `rotatable_bonds`  | Number of rotatable bonds               |
 | `hbond_donors`     | Number of H-bond donors                 |
-| `hbond_acceptors`  | Number of H-bond acceptors              |
+| `hbond_acceptors`  | Number of H-bond acceptors              |{width="100%"}
 
 Table 2: JSON object field types in return array from SmilesDB
 
@@ -80,14 +81,11 @@ getRandom[n_Integer] := Molecule /@ ImportString[
         "https://smilesdb.org/api/smiles/random/"<>ToString[n]
       ,"Body"]
   ,"JSON"] 
-```
+```{width="100%"}
 [@wolframInterface]
 
 # Available Data
 Each molecule in `SmilesDB` includes data from RDKit [@rdkit] as well as a SMILES string identifier. The full database can be queried using the online API at [smilesdb.org/api](https://smilesdb.org/api) with a variety of dynamic endpoints for any number of molecules.
-
-## Usage
-`SmilesDB` can be queried in any language capable of sending http requests, including WolframLanguage [@wolframInterface], JavaScript, and Python.
 
 # Acknowledgements
 
